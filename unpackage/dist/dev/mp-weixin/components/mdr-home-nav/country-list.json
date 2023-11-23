@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-index-list": "/uview-ui/components/u-index-list/u-index-list"
+  },
+  "component": true
+}

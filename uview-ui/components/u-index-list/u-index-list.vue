@@ -274,7 +274,7 @@
 
 	.u-index-bar__sidebar {
 		position: fixed;
-		top: 50%;
+		top: 60%;
 		right: 0;
 		@include vue-flex;
 		flex-direction: column;
@@ -286,8 +286,8 @@
 
 	.u-index-bar__index {
 		font-weight: 500;
-		padding: 8rpx 18rpx;
-		font-size: 22rpx;
+		padding: 4rpx 18rpx;
+		font-size: 20rpx;
 		line-height: 1
 	}
 

@@ -10,15 +10,15 @@
 	export default {
 		data() {
 			return {
-				
+
 			};
 		}
 	}
 </script>
 
 <style lang="scss">
-	.home{
+	.home {
 		height: 100%;
-		background: linear-gradient(to bottom, #0e63f2,#237af4,#8cadf3,#bdcff4,#f1f2f6,#f0f2f5);
+		background: linear-gradient(to bottom, #0e63f2, #237af4, #8cadf3, #bdcff4, #f1f2f6, #f0f2f5);
 	}
 </style>
