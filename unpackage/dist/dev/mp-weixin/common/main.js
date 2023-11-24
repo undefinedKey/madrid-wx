@@ -15,8 +15,8 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 __webpack_require__(/*! uni-pages */ 26);
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 25));
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 27));
-var _uviewUi = _interopRequireDefault(__webpack_require__(/*! uview-ui */ 33));
-var _store = _interopRequireDefault(__webpack_require__(/*! @/store */ 62));
+var _store = _interopRequireDefault(__webpack_require__(/*! ./store */ 33));
+var _uviewUi = _interopRequireDefault(__webpack_require__(/*! uview-ui */ 35));
 var _zh = _interopRequireDefault(__webpack_require__(/*! @/common/locales/zh.js */ 64));
 var _en = _interopRequireDefault(__webpack_require__(/*! @/common/locales/en.js */ 65));
 var _vueI18nMin = _interopRequireDefault(__webpack_require__(/*! @/common/vue-i18n.min.js */ 66));
@@ -29,21 +29,15 @@ wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;
 _vue.default.config.productionTip = false;
 _App.default.mpType = 'app';
 
-// 此处为演示Vue.prototype使用，非uView的功能部分
-_vue.default.prototype.vuePrototype = '枣红';
-
 // 引入全局uView
 
 _vue.default.use(_uviewUi.default);
-
-// 此处为演示vuex使用，非uView的功能部分
-
-// 引入uView提供的对vuex的简写法文件
-var vuexStore = __webpack_require__(/*! @/store/$u.mixin.js */ 69);
-_vue.default.mixin(vuexStore);
+_vue.default.prototype.$store = _store.default;
+_vue.default.prototype.baseUrl = "http://localhost:7777";
+_vue.default.prototype.appid = "wxb61ea5264f87d068";
 
 // 引入uView对小程序分享的mixin封装
-var mpShare = __webpack_require__(/*! uview-ui/libs/mixin/mpShare.js */ 70);
+var mpShare = __webpack_require__(/*! uview-ui/libs/mixin/mpShare.js */ 69);
 _vue.default.mixin(mpShare);
 
 // i18n部分的配置

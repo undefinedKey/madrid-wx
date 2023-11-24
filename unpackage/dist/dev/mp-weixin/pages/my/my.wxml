@@ -1,1 +1,1 @@
-<view></view>
+<view>{{''+getUserinfo.nickname+''}}<button data-event-opts="{{[['tap',[['login',['$event']]]]]}}" bindtap="__e">你好</button><button open-type="getPhoneNumber" data-event-opts="{{[['getphonenumber',[['getPhone',['$event']]]]]}}" bindgetphonenumber="__e">222222</button></view>
